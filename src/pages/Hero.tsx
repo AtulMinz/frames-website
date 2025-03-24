@@ -1,4 +1,5 @@
 import { DotBackground } from "@/components/DotBackground";
+import Frames from "@/pages/Frames";
 import Image from "next/image";
 import "./Hero.css";
 import { Button } from "@/components/ui/button";
@@ -7,8 +8,9 @@ export default function Hero() {
   return (
     <main>
       <DotBackground>
-        <div className="flex h-[60vh] w-full justify-center items-center flex-col">
-          <div className="flex flex-col items-center">
+        <div className="flex min-h-[150vh] w-full flex-col items-center">
+          {/* Hero Section */}
+          <div className="flex h-[60vh] w-full justify-center items-center flex-col">
             <div className="flex flex-row items-center">
               <Image
                 src={"farcaster.svg"}
@@ -21,10 +23,19 @@ export default function Hero() {
                 <span className="text-[#8A63D2]">Frames</span> for all
               </p>
             </div>
-            <Button className="mt-4 z-10 hover:cursor-pointer">
-              Get to the frames
-            </Button>
+            <a
+              href="#frames"
+              className="mt-4 z-10 cursor-pointer transition group hover:bg-neutral-100 duration-300 rounded-md"
+            >
+              <Button className="group-hover:bg-transparent">
+                Get to the frames
+                <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-1 ml-2">
+                  →
+                </span>
+              </Button>
+            </a>
           </div>
+          <Frames />
         </div>
       </DotBackground>
     </main>
