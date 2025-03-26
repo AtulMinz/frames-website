@@ -3,13 +3,13 @@ import Frames from "@/pages/Frames";
 import Image from "next/image";
 import "./Hero.css";
 import { Button } from "@/components/ui/button";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 export default function Hero() {
   return (
-    <main>
+    <main className="flex justify-center flex-col items-center">
       <DotBackground>
-        <div className="flex min-h-[150vh] w-full flex-col items-center">
-          {/* Hero Section */}
+        <div className="flex flex-col items-center w-full min-h-[150vh]">
           <div className="flex h-[60vh] w-full justify-center items-center flex-col">
             <div className="flex flex-row items-center">
               <Image
@@ -25,14 +25,11 @@ export default function Hero() {
             </div>
             <a
               href="#frames"
-              className="mt-4 z-10 cursor-pointer transition group hover:bg-neutral-100 duration-300 rounded-md"
+              className="mt-4 z-10 cursor-pointer transition group hover:bg-neutral-100 duration-300 rounded-md scroll-smooth"
             >
-              <Button className="group-hover:bg-transparent">
+              <InteractiveHoverButton className="w-[200px] h-[40px]">
                 Get to the frames
-                <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-1 ml-2">
-                  →
-                </span>
-              </Button>
+              </InteractiveHoverButton>
             </a>
           </div>
           <Frames />
