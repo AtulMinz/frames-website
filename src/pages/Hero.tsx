@@ -2,7 +2,6 @@ import { DotBackground } from "@/components/DotBackground";
 import Frames from "@/pages/Frames";
 import Image from "next/image";
 import "./Hero.css";
-import { Button } from "@/components/ui/button";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 export default function Hero() {
