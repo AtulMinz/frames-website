@@ -7,7 +7,7 @@ import {
   motion,
   useMotionValue,
 } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useRef, useState } from "react";
 
 /**
  * A custom pointer component that displays an animated cursor.
