@@ -2,7 +2,7 @@
 
 Get Frames is a website that showcases all the Farcaster frame ideas. It serves as a collection of creative and innovative frames for the Farcaster community.
 
-Visit the website here: [Get Frames](https://www.getframes.vercel.app)
+Visit the website here: [Get Frames](https://getframes.vercel.app/)
 
 ### Features
 
