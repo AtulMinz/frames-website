@@ -13,6 +13,3 @@ Visit the website here: [Get Frames](https://getframes.vercel.app/)
 
 Feel free to contribute by submitting new frame ideas or suggesting improvements.
 
-### License
-
-This project is licensed under the MIT License.
